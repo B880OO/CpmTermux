@@ -1,6 +1,4 @@
 import ctypes
-lib = ctypes.CDLL('./helpLib.dll')
-try:
-    lib.Run()
-except:
-    print("Ups...")
+
+lib = ctypes.CDLL('./libcpmtool.so')
+lib.Run()  # Запустит вашу функцию Run из Go
